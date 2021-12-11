@@ -362,6 +362,7 @@ class SMARegister
                     9315 => 'PlugwiseSting',
                     9316 => 'SCS-1000',
                     9317 => 'SB 5400TL-JP-22',
+                    9346 => 'STP6.0-3AV-40'
                 ]
             ],
             30057 => [

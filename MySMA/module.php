@@ -286,6 +286,9 @@ class SMA extends Module
      */
     private function _isDay()
     {
+
+        return true;
+
         // return true on configuration
         if (!$this->ReadPropertyInteger('daytime')) {
             return true;
