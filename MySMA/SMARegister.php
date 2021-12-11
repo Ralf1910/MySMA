@@ -440,44 +440,12 @@ class SMARegister
                 'archive' => 1 // archive: counter
             ],
             30529 => [
-                'name' => 'Total yield Wh1',
+                'name' => 'Total yield',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'FIX3',
+                'format' => 'RAW',
                 'profile' => '~Electricity',
                 'archive' => 1 // archive: counter
-            ],
-            30530 => [
-			    'name' => 'Total yield Wh2',
-			    'count' => 2,
-			    'type' => 'U32',
-			    'format' => 'RAW',
-			    'profile' => '~Electricity',
-			    'archive' => 1 // archive: counter
-            ],
-            30531 => [
-			    'name' => 'Total yield kWh',
-			    'count' => 4,
-			    'type' => 'U32',
-			    'format' => 'FIX0',
-			    'profile' => '~Electricity',
-			    'archive' => 1 // archive: counter
-            ],
-            30533 => [
-				'name' => 'Total yield MWh',
-				'count' => 2,
-				'type' => 'U32',
-				'format' => 'FIX0',
-				'profile' => '~Electricity',
-				'archive' => 1 // archive: counter
-            ],
-            30513 => [
-				'name' => 'Total yield',
-				'count' => 4,
-				'type' => 'U64',
-				'format' => 'RAW',
-				'profile' => '~Electricity',
-				'archive' => 1 // archive: counter
             ],
             30769 => [
                 'name' => 'DC current input',
@@ -543,7 +511,6 @@ class SMARegister
                 'format' => 'FIX2',
                 'profile' => '~Hertz'
             ],
-            /*
             34109 => [
                 'name' => 'Heat sink temperature',
                 'count' => 2,
@@ -565,7 +532,7 @@ class SMARegister
                 'format' => 'TEMP',
                 'profile' => '~Temperature'
             ],
-            */
+
             /**
              * Sunny Tripower
              */
@@ -589,22 +556,6 @@ class SMARegister
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
-            ],
-            30520 => [
-			    'name' => 'Total yield 30520',
-				'count' => 2,
-				'type' => 'U32',
-				'format' => 'FIX0', // convert Wh to kWh
-				'profile' => '~Electricity',
-				'archive' => 1 // archive: counter
-            ],
-              30517 => [
-						    'name' => 'Day yield 30517',
-							'count' => 4,
-							'type' => 'U64',
-							'format' => 'FIX0', // convert Wh to kWh
-							'profile' => '~Electricity',
-							'archive' => 1 // archive: counter
             ],
 
             /**
