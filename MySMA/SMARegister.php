@@ -431,10 +431,10 @@ class SMARegister
                 'format' => 'DURATION_S',
                 'profile' => 'Hours'
             ],
-            30535 => [
+            30513 => [
                 'name' => 'Day yield',
-                'count' => 2,
-                'type' => 'U32',
+                'count' => 4,
+                'type' => 'U64',
                 'format' => 'FIX3', // convert Wh to kWh
                 'profile' => '~Electricity',
                 'archive' => 1 // archive: counter
