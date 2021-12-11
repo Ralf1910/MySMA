@@ -439,7 +439,7 @@ class SMARegister
                 'profile' => '~Electricity',
                 'archive' => 1 // archive: counter
             ],
-            30531 => [
+            30513 => [
                 'name' => 'Total yield',
                 'count' => 2,
                 'type' => 'U64',
