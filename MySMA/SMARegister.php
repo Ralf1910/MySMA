@@ -440,12 +440,20 @@ class SMARegister
                 'archive' => 1 // archive: counter
             ],
             30529 => [
-                'name' => 'Total yield Wh',
-                'count' => 4,
+                'name' => 'Total yield Wh1',
+                'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0',
                 'profile' => '~Electricity',
                 'archive' => 1 // archive: counter
+            ],
+            30530 => [
+			    'name' => 'Total yield Wh2',
+			                'count' => 2,
+			                'type' => 'U32',
+			                'format' => 'FIX0',
+			                'profile' => '~Electricity',
+			                'archive' => 1 // archive: counter
             ],
             30531 => [
 			    'name' => 'Total yield kWh',
