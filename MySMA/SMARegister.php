@@ -431,11 +431,11 @@ class SMARegister
                 'format' => 'DURATION_S',
                 'profile' => 'Hours'
             ],
-            30531 => [
+            30535 => [
                 'name' => 'Day yield',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'FIX0', // convert Wh to kWh
+                'format' => 'RAW',
                 'profile' => '~Electricity',
                 'archive' => 1 // archive: counter
             ],
@@ -448,25 +448,46 @@ class SMARegister
                 'archive' => 1 // archive: counter
             ],
             30769 => [
-                'name' => 'DC current input',
+                'name' => 'DC 1 current input',
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX3',
                 'profile' => '~Ampere'
             ],
             30771 => [
-                'name' => 'DC voltage input',
+                'name' => 'DC 1 voltage input',
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX2',
                 'profile' => '~Volt'
             ],
             30773 => [
-                'name' => 'DC power input',
+                'name' => 'DC 1 power input',
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
+            ],
+            30957 => [
+			                'name' => 'DC 2 current input',
+			                'count' => 2,
+			                'type' => 'S32',
+			                'format' => 'FIX3',
+			                'profile' => '~Ampere'
+			            ],
+			            30959 => [
+			                'name' => 'DC 2 voltage input',
+			                'count' => 2,
+			                'type' => 'S32',
+			                'format' => 'FIX2',
+			                'profile' => '~Volt'
+			            ],
+			            30961 => [
+			                'name' => 'DC 2 power input',
+			                'count' => 2,
+			                'type' => 'S32',
+			                'format' => 'FIX0',
+			                'profile' => 'Watt'
             ],
             30775 => [
                 'name' => 'AC active power across all phases',
@@ -476,61 +497,12 @@ class SMARegister
                 'profile' => 'Watt',
                 'archive' => 0 // archive: default
             ],
-            30789 => [
-                'name' => 'Grid voltage phase AB',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX2',
-                'profile' => '~Volt'
-            ],
-            30791 => [
-                'name' => 'Grid voltage phase BC',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX2',
-                'profile' => '~Volt'
-            ],
-            30793 => [
-                'name' => 'Grid voltage phase CA',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX2',
-                'profile' => '~Volt'
-            ],
             30795 => [
                 'name' => 'Grid current',
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX3',
                 'profile' => '~Ampere'
-            ],
-            30803 => [
-                'name' => 'Power frequency',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX2',
-                'profile' => '~Hertz'
-            ],
-            34109 => [
-                'name' => 'Heat sink temperature',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'TEMP',
-                'profile' => '~Temperature'
-            ],
-            34113 => [
-                'name' => 'Interior temperature',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'TEMP',
-                'profile' => '~Temperature'
-            ],
-            34125 => [
-                'name' => 'External temperature',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'TEMP',
-                'profile' => '~Temperature'
             ],
 
             /**
