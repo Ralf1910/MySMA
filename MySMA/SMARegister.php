@@ -447,11 +447,11 @@ class SMARegister
                 'profile' => '~Electricity',
                 'archive' => 1 // archive: counter
             ],
-            30515 => [
+            30530 => [
 			    'name' => 'Total yield Wh2',
 			    'count' => 2,
 			    'type' => 'U32',
-			    'format' => 'FIX0',
+			    'format' => 'RAW',
 			    'profile' => '~Electricity',
 			    'archive' => 1 // archive: counter
             ],
