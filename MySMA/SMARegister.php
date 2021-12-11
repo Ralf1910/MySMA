@@ -559,12 +559,12 @@ class SMARegister
                 'profile' => 'Watt'
             ],
             30513 => [
-			    'name' => 'Total yield 30513',
-					                'count' => 2,
-					                'type' => 'U64',
-					                'format' => 'FIX0', // convert Wh to kWh
-					                'profile' => '~Electricity',
-					                'archive' => 1 // archive: counter
+			    'name' => 'Total yield',
+				'count' => 4,
+				'type' => 'U64',
+				'format' => 'FIX0', // convert Wh to kWh
+				'profile' => '~Electricity',
+				'archive' => 1 // archive: counter
             ],
 
             /**
@@ -660,7 +660,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => '~Watt'
+                'profile' => 'Watt'
             ]
         ]
     ];

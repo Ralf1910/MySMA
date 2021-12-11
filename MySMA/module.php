@@ -197,7 +197,6 @@ class SMA extends Module
         if ($this->device == 'default') {
             $addresses = $addresses['default'];
         }
-
         else {
          $addresses = array_replace_recursive(
              $addresses['default'],
