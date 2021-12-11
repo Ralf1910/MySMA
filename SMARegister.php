@@ -558,48 +558,6 @@ class SMARegister
                 'format' => 'FIX0',
                 'profile' => 'Watt'
             ],
-            30783 => [
-                'name' => 'Grid Voltage phase L1',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX2',
-                'profile' => '~Volt'
-            ],
-            30785 => [
-                'name' => 'Grid Voltage phase L2',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX2',
-                'profile' => '~Volt'
-            ],
-            30787 => [
-                'name' => 'Grid Voltage phase L3',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX2',
-                'profile' => '~Volt'
-            ],
-            30797 => [
-                'name' => 'Grid current phase L1',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX3',
-                'profile' => '~Ampere'
-            ],
-            30799 => [
-                'name' => 'Grid current phase L2',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX3',
-                'profile' => '~Ampere'
-            ],
-            30801 => [
-                'name' => 'Grid current phase L3',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX3',
-                'profile' => '~Ampere'
-            ],
 
             /**
              * Sunny Island
@@ -726,8 +684,4 @@ class SMARegister
         ]
     ];
 }
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
+

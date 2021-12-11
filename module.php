@@ -13,10 +13,8 @@ require_once(__MODULE__ . '/SMARegister.php');
  *
  * @version     0.1
  * @category    Symcon
- * @package     de.codeking.symcon
- * @author      Frank Herrmann <frank@codeking.de>
- * @link        https://codeking.de
- * @link        https://github.com/CodeKing/de.codeking.symcon
+ * @package     Ralf
+ * @author      Frank Herrmann / Ralf Ehren
  *
  */
 class SMAModbus extends Module
