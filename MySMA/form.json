@@ -89,12 +89,12 @@
     {
       "type": "Button",
       "label": "Read Device",
-      "onClick": "MySMA_UpdateDevice($id, true);"
+      "onClick": "SMA_UpdateDevice($id, true);"
     },
     {
       "type": "Button",
       "label": "Update Values",
-      "onClick": "MySMA_UpdateValues($id, true);"
+      "onClick": "SMA_UpdateValues($id, true);"
     }
   ]
 }
