@@ -341,7 +341,7 @@ class SMA extends Module
                 break;
             case 'kWh.Fixed':
                 IPS_CreateVariableProfile($profile_id, 2); // float
-                IPS_SetVariableProfileDigits($profile_id, 0); // 0 decimals
+                IPS_SetVariableProfileDigits($profile_id, 3); // 3 decimals
                 IPS_SetVariableProfileText($profile_id, '', ' kWh'); // Watt
                 IPS_SetVariableProfileIcon($profile_id, 'Electricity');
                 break;

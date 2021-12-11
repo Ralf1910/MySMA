@@ -12,7 +12,12 @@
         {
           "label": "Sunny Boy",
           "value": "sunnyboy"
+        },
+        {
+	  "label": "SMA Tripower",
+	  "value": "tripower"
         }
+        
       ]
     },
     {
