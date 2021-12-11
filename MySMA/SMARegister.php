@@ -662,17 +662,6 @@ class SMARegister
                 'format' => 'FIX0',
                 'profile' => '~Watt'
             ]
-        ],
-        'tripower' => [
-         	30531 => [
-		                'name' => 'Total yield 30531',
-		                'count' => 2,
-		                'type' => 'U64',
-		                'format' => 'FIX0', // convert Wh to kWh
-		                'profile' => '~Electricity',
-		                'archive' => 1 // archive: counter
-            ]
-
         ]
     ];
 
