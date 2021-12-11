@@ -196,12 +196,20 @@ class SMA extends Module
         // get addresses by device
         if ($this->device == 'default') {
             $addresses = $addresses['default'];
-        } else {
-            $addresses = array_replace_recursive(
-                $addresses['default'],
-                $addresses[$this->device]
-            );
         }
+
+        // else {
+        //    $addresses = array_replace_recursive(
+        //        $addresses['default'],
+        //         $addresses[$this->device]
+        //    );
+        // }
+
+		// new
+		if ($this->device == 'tripower') {
+		    $addresses = $addresses['tripower'];
+		}
+
 
         // read data
         foreach ($addresses AS $address => $config) {
