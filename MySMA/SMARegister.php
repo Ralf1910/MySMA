@@ -445,8 +445,8 @@ class SMARegister
                 'name' => 'Total yield',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => 'kWh.Fixed',
+                'format' => 'FIX3',
+                'profile' => '~Electricity',
                 'archive' => 1 // archive: counter
             ],
             30769 => [
