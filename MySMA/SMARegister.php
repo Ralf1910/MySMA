@@ -474,8 +474,8 @@ class SMARegister
             30513 => [
 				'name' => 'Total yield',
 				'count' => 4,
-				'type' => 'U32',
-				'format' => 'FIX0',
+				'type' => 'U64',
+				'format' => 'RAW',
 				'profile' => '~Electricity',
 				'archive' => 1 // archive: counter
             ],
