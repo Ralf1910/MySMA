@@ -440,12 +440,36 @@ class SMARegister
                 'archive' => 1 // archive: counter
             ],
             30529 => [
-                'name' => 'Total yield',
-                'count' => 2,
+                'name' => 'Total yield Wh',
+                'count' => 4,
                 'type' => 'U32',
                 'format' => 'FIX0',
                 'profile' => '~Electricity',
                 'archive' => 1 // archive: counter
+            ],
+            30531 => [
+			    'name' => 'Total yield kWh',
+			    'count' => 4,
+			    'type' => 'U32',
+			    'format' => 'FIX0',
+			    'profile' => '~Electricity',
+			    'archive' => 1 // archive: counter
+            ],
+            30533 => [
+				'name' => 'Total yield MWh',
+				'count' => 2,
+				'type' => 'U32',
+				'format' => 'FIX0',
+				'profile' => '~Electricity',
+				'archive' => 1 // archive: counter
+            ],
+            30513 => [
+				'name' => 'Total yield',
+				'count' => 4,
+				'type' => 'U32',
+				'format' => 'FIX0',
+				'profile' => '~Electricity',
+				'archive' => 1 // archive: counter
             ],
             30769 => [
                 'name' => 'DC current input',
