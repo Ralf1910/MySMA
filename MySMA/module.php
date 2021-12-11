@@ -198,17 +198,12 @@ class SMA extends Module
             $addresses = $addresses['default'];
         }
 
-        // else {
-        //    $addresses = array_replace_recursive(
-        //        $addresses['default'],
-        //         $addresses[$this->device]
-        //    );
-        // }
-
-		// new
-		if ($this->device == 'tripower') {
-		    $addresses = $addresses['tripower'];
-		}
+        else {
+         $addresses = array_replace_recursive(
+             $addresses['default'],
+              $addresses[$this->device]
+         );
+      }
 
 
         // read data
