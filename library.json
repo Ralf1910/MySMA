@@ -1,7 +1,8 @@
 {
   "id": "{AC2B86A1-04D2-4E66-997C-39F9DD9CFC0E}",
-  "author": "Ralf1910",
-  "name": "SMA Modbus",
+  "author": "Ralf Ehren",
+  "url": "",
+  "name": "MySMA",
   "compatibility": {
     "version": "4.4"
   },
