@@ -431,7 +431,7 @@ class SMARegister
                 'format' => 'DURATION_S',
                 'profile' => 'Hours'
             ],
-            30513 => [
+            30531 => [
                 'name' => 'Day yield',
                 'count' => 2,
                 'type' => 'U32',
