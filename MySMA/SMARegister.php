@@ -566,6 +566,14 @@ class SMARegister
 				'profile' => '~Electricity',
 				'archive' => 1 // archive: counter
             ],
+              30517 => [
+						    'name' => 'Day yield 30517',
+							'count' => 4,
+							'type' => 'U64',
+							'format' => 'FIX0', // convert Wh to kWh
+							'profile' => '~Electricity',
+							'archive' => 1 // archive: counter
+            ],
 
             /**
              * Sunny Island
