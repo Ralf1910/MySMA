@@ -565,7 +565,7 @@ class SMARegister
 					                'format' => 'FIX0', // convert Wh to kWh
 					                'profile' => '~Electricity',
 					                'archive' => 1 // archive: counter
-            ]
+            ],
 
             /**
              * Sunny Island
