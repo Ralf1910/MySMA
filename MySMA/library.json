@@ -1,0 +1,11 @@
+{
+  "id": "{AC2B86A1-04D2-4E66-997C-39F9DD9CFC0E}",
+  "author": "Ralf1910",
+  "name": "SMA Modbus",
+  "compatibility": {
+    "version": "4.4"
+  },
+  "version": "1.0",
+  "build": 0,
+  "date": 0
+}
