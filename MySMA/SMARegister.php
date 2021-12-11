@@ -443,7 +443,7 @@ class SMARegister
                 'name' => 'Total yield',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'FIX3',
+                'format' => 'FIX0',
                 'profile' => '~Electricity',
                 'archive' => 1 // archive: counter
             ],
