@@ -559,7 +559,7 @@ class SMARegister
                 'profile' => 'Watt'
             ],
             30513 => [
-			    'name' => 'Total yield',
+			    'name' => 'Total yield 30513',
 				'count' => 4,
 				'type' => 'U64',
 				'format' => 'FIX0', // convert Wh to kWh
