@@ -8,8 +8,8 @@ require_once(__ROOT__ . '/libs/phpmodbus/Phpmodbus/ModbusMaster.php');
 require_once(__MODULE__ . '/SMARegister.php');
 
 /**
- * Class SMA_Modbus
- * IP-Symcon SMA Modbus Module
+ * Class SMA
+ * IP-Symcon SMA Module
  *
  * @version     0.1
  * @category    Symcon
