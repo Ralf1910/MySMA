@@ -1,14 +1,14 @@
 
 {
   "id": "{AC2B86A1-04D2-4E66-997C-39F9DD9CFC0E}",
-  "name": "MySMA",
+  "name": "SMA",
   "type": 3,
   "vendor": "SMA",
   "aliases": [
-    "mySMA"
+    "SMA Gerät"
   ],
   "parentRequirements": [],
   "childRequirements": [],
   "implemented": [],
-  "prefix": "MySMA"
+  "prefix": "SMA"
 }

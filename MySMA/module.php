@@ -17,7 +17,7 @@ require_once(__MODULE__ . '/SMARegister.php');
  * @author      Frank Herrmann / Ralf Ehren
  *
  */
-class SMAModbus extends Module
+class SMA extends Module
 {
     use InstanceHelper;
 
