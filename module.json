@@ -1,14 +1,14 @@
 
 {
-  "id": "{D635007F-C977-414F-B241-AA09DC3669B0}",
-  "name": "SMA ModBus",
+  "id": "{AC2B86A1-04D2-4E66-997C-39F9DD9CFC0E}",
+  "name": "MySMA",
   "type": 3,
   "vendor": "SMA",
   "aliases": [
-    "SMA ModBus"
+    "mySMA"
   ],
   "parentRequirements": [],
   "childRequirements": [],
   "implemented": [],
-  "prefix": "SMAModbus"
+  "prefix": "MySMA"
 }
