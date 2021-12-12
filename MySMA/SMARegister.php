@@ -361,7 +361,9 @@ class SMARegister
                     9314 => 'PlugwiseCircle',
                     9315 => 'PlugwiseSting',
                     9316 => 'SCS-1000',
-                    9317 => 'SB 5400TL-JP-22'
+                    9317 => 'SB 5400TL-JP-22',
+                    9326 => 'SB Storage 2.5',
+                    9346 => 'SB Tripower 6.0'
                 ]
             ],
             30057 => [
@@ -528,110 +530,6 @@ class SMARegister
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
-            ],
-
-            /**
-             * Sunny Boy Storage
-             */
-            30843 => [
-                'name' => 'BatAmp',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'FIX3',
-                'profile' => '~Ampere'
-            ],
-            30845 => [
-                'name' => 'Current battery charge status',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => '~Battery.100'
-            ],
-            30847 => [
-			    'name' => 'BatDiagActlCapacNom',
-			    'count' => 2,
-			    'type' => 'U32',
-			    'format' => 'RAW',
-			    'profile' => '~Battery.100'
-            ],
-            30849 => [
-                'name' => 'Battery temperature',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'FIX1',
-                'profile' => '~Temperature'
-            ],
-            30851 => [
-                'name' => 'Battery voltage',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX2',
-                'profile' => '~Volt'
-            ],
-            30955 => [
-            	'name' => 'BatOpStt',
-            	'count' => 2,
-            	'type' => U32',
-            	'format' => 'ENUM',
-				'mapping' => [
-				     303 => 'Aus',
-				     2291 => 'Batterie Standby',
-				     2292 => 'Batterie laden',
-				     2293 => 'Batterie entladen',
-				     16777213 => 'Informationen liegen nicht vor'
-					]
-                ]
-
-            31391 => [
-			    'name' => 'OperationBatHealth',
-			    'count' => 2,
-			    'type' => 'U32',
-			    'format' => 'ENUM',
-				'mapping' => [
-								    35 => 'Fehler',
-								     303 => 'Aus',
-								     307 => 'OK',
-								     455 => 'Warnung',
-								     16777213 => 'Informationen liegen nicht vor'
-									]
-                ]
-            ],
-            40187 => [
-			    'name' => 'BatCapacRtgWh',
-			    'count' => 2,
-			    'type' => 'U32',
-				'format' => 'RAW',
-				'profile' => 'MySMA.Wh'
-            ],
-            30853 => [
-                'name' => 'Active battery charging mode',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'ENUM',
-                'mapping' => [
-                    1767 => 'Quick charge',
-                    1768 => 'Full charge',
-                    1769 => 'Compensation charge',
-                    1770 => 'Maintenance charge',
-                    2184 => 'Save energy while on mains'
-                ]
-            ],
-            30857 => [
-                'name' => 'Number of battery charge throughputs',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'FIX0',
-            ],
-            30859 => [
-                'name' => 'Battery maintenance charge status',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'ENUM',
-                'mapping' => [
-                    803 => 'Inactive',
-                    1771 => 'Charge with solar power',
-                    1772 => 'Charge with solar and mains power',
-                ]
             ]
         ]
     ];
