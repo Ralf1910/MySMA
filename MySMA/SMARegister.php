@@ -582,19 +582,6 @@ class SMARegister
 				     2293 => 'Batterie entladen',
 				     16777213 => 'Informationen liegen nicht vor'
 					]
-            ],
-            31391 => [
-			    'name' => 'OperationBatHealth',
-			    'count' => 2,
-			    'type' => 'U32',
-			    'format' => 'ENUM',
-				'mapping' => [
-					    35 => 'Fehler',
-  				        303 => 'Aus',
-					    307 => 'OK',
-					    455 => 'Warnung',
-					    16777213 => 'Informationen liegen nicht vor'
-					]
             ]
         ]
     ];
