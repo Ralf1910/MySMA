@@ -362,8 +362,7 @@ class SMARegister
                     9315 => 'PlugwiseSting',
                     9316 => 'SCS-1000',
                     9317 => 'SB 5400TL-JP-22',
-                    9326 => 'SB Storage 2.5',
-                    9346 => 'SB Tripower 6.0'
+                    9326 => 'SB Storage 2.5'
                 ]
             ],
             30057 => [
