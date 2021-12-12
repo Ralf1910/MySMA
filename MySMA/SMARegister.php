@@ -582,20 +582,19 @@ class SMARegister
 				     2293 => 'Batterie entladen',
 				     16777213 => 'Informationen liegen nicht vor'
 					]
-                ],
-
+            ],
             31391 => [
 			    'name' => 'OperationBatHealth',
 			    'count' => 2,
 			    'type' => 'U32',
 			    'format' => 'ENUM',
 				'mapping' => [
-								    35 => 'Fehler',
-								     303 => 'Aus',
-								     307 => 'OK',
-								     455 => 'Warnung',
-								     16777213 => 'Informationen liegen nicht vor'
-									]
+					    35 => 'Fehler',
+  				        303 => 'Aus',
+					    307 => 'OK',
+					    455 => 'Warnung',
+					    16777213 => 'Informationen liegen nicht vor'
+					]
             ],
             40187 => [
 			    'name' => 'BatCapacRtgWh',
@@ -622,6 +621,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
+                'profile' => '~Volt'
             ],
             30859 => [
                 'name' => 'Battery maintenance charge status',
