@@ -596,7 +596,6 @@ class SMARegister
 								     455 => 'Warnung',
 								     16777213 => 'Informationen liegen nicht vor'
 									]
-                ]
             ],
             40187 => [
 			    'name' => 'BatCapacRtgWh',
