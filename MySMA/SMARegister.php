@@ -534,7 +534,7 @@ class SMARegister
              * Sunny Storage
              */
             30843 => [
-                'name' => 'Bat.Amp',
+                'name' => 'BatAmp',
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX3',
@@ -548,7 +548,7 @@ class SMARegister
                 'profile' => '~Battery.100'
             ],
             30847 => [
-			    'name' => 'Bat.Diag.ActlCapacNom',
+			    'name' => 'BatDiagActlCapacNom',
 			    'count' => 2,
 			    'type' => 'U32',
 			    'format' => 'RAW',
@@ -569,21 +569,21 @@ class SMARegister
                 'profile' => '~Volt'
             ],
             31391 => [
-			    'name' => 'Operation.Bat.Health',
+			    'name' => 'OperationBatHealth',
 			    'count' => 2,
 			    'type' => 'U32',
 			    'format' => 'FIX2',
 			    'profile' => '~Volt'
             ],
             31393 => [
-			    'name' => 'BatChrg.CurBatCha',
+			    'name' => 'BatChrgCurBatCha',
 			    'count' => 2,
 			    'type' => 'U32',
 			    'format' => 'FIX0',
 			    'profile' => '~Volt'
             ],
             31395 => [
-			    'name' => 'BatDsch.CurBatDsch',
+			    'name' => 'BatDschCurBatDsch',
 			    'count' => 2,
 			    'type' => 'U32',
 			    'format' => 'FIX0',
@@ -597,7 +597,7 @@ class SMARegister
 			    'profile' => '~Volt'
             ],
             40035 => [
-						    'name' => 'Bat.CapacRtgWh',
+						    'name' => 'BatCapacRtgWh',
 						    'count' => 2,
 						    'type' => 'U32',
 						    'format' => 'RAW',
