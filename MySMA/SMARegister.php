@@ -547,12 +547,12 @@ class SMARegister
                 'format' => 'RAW',
                 'profile' => '~Battery.100'
             ],
-             30847 => [
-			                'name' => 'Bat.Diag.ActlCapacNom',
-			                'count' => 2,
-			                'type' => 'U32',
-			                'format' => 'RAW',
-			                'profile' => '~Battery.100'
+            30847 => [
+			    'name' => 'Bat.Diag.ActlCapacNom',
+			    'count' => 2,
+			    'type' => 'U32',
+			    'format' => 'RAW',
+			    'profile' => '~Battery.100'
             ],
             30849 => [
                 'name' => 'Battery temperature',
@@ -569,32 +569,39 @@ class SMARegister
                 'profile' => '~Volt'
             ],
             31391 => [
-			                'name' => 'Operation.Bat.Health',
-			                'count' => 2,
-			                'type' => 'U32',
-			                'format' => 'FIX2',
-			                'profile' => '~Volt'
+			    'name' => 'Operation.Bat.Health',
+			    'count' => 2,
+			    'type' => 'U32',
+			    'format' => 'FIX2',
+			    'profile' => '~Volt'
             ],
-                    31393 => [
-						                'name' => 'BatChrg.CurBatCha',
-						                'count' => 2,
-						                'type' => 'U32',
-						                'format' => 'FIX0',
-						                'profile' => '~Volt'
+            31393 => [
+			    'name' => 'BatChrg.CurBatCha',
+			    'count' => 2,
+			    'type' => 'U32',
+			    'format' => 'FIX0',
+			    'profile' => '~Volt'
             ],
-                                31395 => [
-									                'name' => 'BatDsch.CurBatDsch',
-									                'count' => 2,
-									                'type' => 'U32',
-									                'format' => 'FIX0',
-									                'profile' => '~Volt'
+            31395 => [
+			    'name' => 'BatDsch.CurBatDsch',
+			    'count' => 2,
+			    'type' => 'U32',
+			    'format' => 'FIX0',
+			    'profile' => '~Volt'
             ],
             40035 => [
-												                'name' => 'BatType',
-												                'count' => 2,
-												                'type' => 'U32',
-												                'format' => 'RAW',
-												                'profile' => '~Volt'
+			    'name' => 'BatType',
+			    'count' => 2,
+			    'type' => 'U32',
+			    'format' => 'RAW',
+			    'profile' => '~Volt'
+            ],
+            40035 => [
+						    'name' => 'Bat.CapacRtgWh',
+						    'count' => 2,
+						    'type' => 'U32',
+						    'format' => 'RAW',
+						    'profile' => '~Volt'
             ],
             30853 => [
                 'name' => 'Active battery charging mode',
