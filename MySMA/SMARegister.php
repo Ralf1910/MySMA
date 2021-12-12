@@ -363,7 +363,7 @@ class SMARegister
                     9316 => 'SCS-1000',
                     9317 => 'SB 5400TL-JP-22',
                     9326 => 'SB Storage 2.5',
-                    9346 => 'SB Tripower 6.0'
+                    9346 => 'STP Tripower 6.0'
                 ]
             ],
             30057 => [
@@ -530,6 +530,45 @@ class SMARegister
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
+            ],
+
+            /**
+             * Sunny Boy Storage
+             */
+            30843 => [
+                'name' => 'BatAmp',
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX3',
+                'profile' => '~Ampere'
+            ],
+            30845 => [
+                'name' => 'Current battery charge status',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX0',
+                'profile' => '~Battery.100'
+            ],
+            30847 => [
+			    'name' => 'BatDiagActlCapacNom',
+			    'count' => 2,
+			    'type' => 'U32',
+			    'format' => 'RAW',
+			    'profile' => '~Battery.100'
+            ],
+            30849 => [
+                'name' => 'Battery temperature',
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX1',
+                'profile' => '~Temperature'
+            ],
+            30851 => [
+                'name' => 'Battery voltage',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX2',
+                'profile' => '~Volt'
             ]
         ]
     ];
