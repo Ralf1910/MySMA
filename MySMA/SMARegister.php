@@ -362,7 +362,8 @@ class SMARegister
                     9315 => 'PlugwiseSting',
                     9316 => 'SCS-1000',
                     9317 => 'SB 5400TL-JP-22',
-                    9326 => 'SB Storage 2.5'
+                    9326 => 'SB Storage 2.5',
+                    9346 => 'SB Tripower 6.0'
                 ]
             ],
             30057 => [
@@ -539,13 +540,13 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX3',
-                'profile' => '~Battery.100'
+                'profile' => '~Ampere'
             ],
             30845 => [
                 'name' => 'Current battery charge status',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'RAW',
+                'format' => 'FIX0',
                 'profile' => '~Battery.100'
             ],
             30847 => [
@@ -569,40 +570,40 @@ class SMARegister
                 'format' => 'FIX2',
                 'profile' => '~Volt'
             ],
+            30955 => [
+            	'name' => 'BatOpStt',
+            	'count' => 2,
+            	'type' => U32',
+            	'format' => 'ENUM',
+				'mapping' => [
+				     303 => 'Aus',
+				     2291 => 'Batterie Standby',
+				     2292 => 'Batterie laden',
+				     2293 => 'Batterie entladen',
+				     16777213 => 'Informationen liegen nicht vor'
+					]
+                ]
+
             31391 => [
 			    'name' => 'OperationBatHealth',
 			    'count' => 2,
 			    'type' => 'U32',
-			    'format' => 'FIX2',
-			    'profile' => '~Volt'
+			    'format' => 'ENUM',
+				'mapping' => [
+								    35 => 'Fehler',
+								     303 => 'Aus',
+								     307 => 'OK',
+								     455 => 'Warnung',
+								     16777213 => 'Informationen liegen nicht vor'
+									]
+                ]
             ],
-            31393 => [
-			    'name' => 'BatChrgCurBatCha',
+            40187 => [
+			    'name' => 'BatCapacRtgWh',
 			    'count' => 2,
 			    'type' => 'U32',
-			    'format' => 'FIX0',
-			    'profile' => '~Volt'
-            ],
-            31395 => [
-			    'name' => 'BatDschCurBatDsch',
-			    'count' => 2,
-			    'type' => 'U32',
-			    'format' => 'FIX0',
-			    'profile' => '~Volt'
-            ],
-            40035 => [
-			    'name' => 'BatType',
-			    'count' => 2,
-			    'type' => 'U32',
-			    'format' => 'RAW',
-			    'profile' => '~Volt'
-            ],
-            40035 => [
-						    'name' => 'BatCapacRtgWh',
-						    'count' => 2,
-						    'type' => 'U32',
-						    'format' => 'RAW',
-						    'profile' => '~Volt'
+				'format' => 'RAW',
+				'profile' => 'MySMA.Wh'
             ],
             30853 => [
                 'name' => 'Active battery charging mode',
