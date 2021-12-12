@@ -194,18 +194,14 @@ class SMA extends Module
         $this->ReadConfig();
 
         // get addresses by device
-
-        $addresses = $addresses['default'];
-
-        if ($this->device == 'storage') {
-		    $addresses = $addresses['storage'];
+        if ($this->device == 'default') {
+            $addresses = $addresses['default'];
         }
-
-       // else {
-       //  $addresses = array_replace_recursive(
-       //      $addresses['default'],
-       //       $addresses[$this->device]
-       //  );
+        else {
+         $addresses = array_replace_recursive(
+             $addresses['default'],
+              $addresses[$this->device]
+         );
       }
 
 
