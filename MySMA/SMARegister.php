@@ -361,8 +361,7 @@ class SMARegister
                     9314 => 'PlugwiseCircle',
                     9315 => 'PlugwiseSting',
                     9316 => 'SCS-1000',
-                    9317 => 'SB 5400TL-JP-22',
-                    9326 => 'SB Storage 2.5'
+                    9317 => 'SB 5400TL-JP-22'
                 ]
             ],
             30057 => [
