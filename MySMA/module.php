@@ -202,11 +202,11 @@ class SMA extends Module
 		    $addresses = $addresses['default'];
         }
 
-        else {
-         $addresses = array_replace_recursive(
-             $addresses['default'],
-              $addresses[$this->device]
-         );
+       // else {
+       //  $addresses = array_replace_recursive(
+       //      $addresses['default'],
+       //       $addresses[$this->device]
+       //  );
       }
 
 
