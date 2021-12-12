@@ -361,7 +361,8 @@ class SMARegister
                     9314 => 'PlugwiseCircle',
                     9315 => 'PlugwiseSting',
                     9316 => 'SCS-1000',
-                    9317 => 'SB 5400TL-JP-22'
+                    9317 => 'SB 5400TL-JP-22',
+                    9326 => 'SB Storage 2.5'
                 ]
             ],
             30057 => [
@@ -436,7 +437,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'RAW',
-                'profile' => '~Electricity',
+                'profile' => 'MySMA.Wh',
                 'archive' => 1 // archive: counter
             ],
             30529 => [
@@ -444,7 +445,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'RAW',
-                'profile' => '~Electricity',
+                'profile' => 'MySMA.Wh',
                 'archive' => 1 // archive: counter
             ],
             30769 => [
@@ -469,25 +470,25 @@ class SMARegister
                 'profile' => 'Watt'
             ],
             30957 => [
-			                'name' => 'DC 2 current input',
-			                'count' => 2,
-			                'type' => 'S32',
-			                'format' => 'FIX3',
-			                'profile' => '~Ampere'
-			            ],
-			            30959 => [
-			                'name' => 'DC 2 voltage input',
-			                'count' => 2,
-			                'type' => 'S32',
-			                'format' => 'FIX2',
-			                'profile' => '~Volt'
-			            ],
-			            30961 => [
-			                'name' => 'DC 2 power input',
-			                'count' => 2,
-			                'type' => 'S32',
-			                'format' => 'FIX0',
-			                'profile' => 'Watt'
+			    'name' => 'DC 2 current input',
+			    'count' => 2,
+			    'type' => 'S32',
+			    'format' => 'FIX3',
+			    'profile' => '~Ampere'
+			],
+			30959 => [
+			    'name' => 'DC 2 voltage input',
+			    'count' => 2,
+			    'type' => 'S32',
+			    'format' => 'FIX2',
+			    'profile' => '~Volt'
+			],
+			30961 => [
+			    'name' => 'DC 2 power input',
+			    'count' => 2,
+			    'type' => 'S32',
+			    'format' => 'FIX0',
+			    'profile' => 'Watt'
             ],
             30775 => [
                 'name' => 'AC active power across all phases',
@@ -531,7 +532,7 @@ class SMARegister
             ],
 
             /**
-             * Sunny Storage
+             * Sunny Boy Storage
              */
             30843 => [
                 'name' => 'BatAmp',

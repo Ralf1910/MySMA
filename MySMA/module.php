@@ -341,10 +341,10 @@ class SMA extends Module
                 IPS_SetVariableProfileText($profile_id, '', ' W'); // Watt
                 IPS_SetVariableProfileIcon($profile_id, 'Electricity');
                 break;
-            case 'kWh.Fixed':
-                IPS_CreateVariableProfile($profile_id, 2); // float
-                IPS_SetVariableProfileDigits($profile_id, 3); // 3 decimals
-                IPS_SetVariableProfileText($profile_id, '', ' kWh'); // Watt
+            case 'MySMA.Wh':
+                IPS_CreateVariableProfile($profile_id, 1); // Integer
+                IPS_SetVariableProfileDigits($profile_id, 0); // 0 decimals
+                IPS_SetVariableProfileText($profile_id, '', ' Wh'); // Watt
                 IPS_SetVariableProfileIcon($profile_id, 'Electricity');
                 break;
             case 'Hours':
