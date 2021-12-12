@@ -573,7 +573,7 @@ class SMARegister
             30955 => [
             	'name' => 'BatOpStt',
             	'count' => 2,
-            	'type' => U32',
+            	'type' => 'U32',
             	'format' => 'ENUM',
 				'mapping' => [
 				     303 => 'Aus',
@@ -582,6 +582,57 @@ class SMARegister
 				     2293 => 'Batterie entladen',
 				     16777213 => 'Informationen liegen nicht vor'
 					]
+            ],
+            31391 => [
+			    'name' => 'OperationBatHealth',
+			    'count' => 2,
+			    'type' => 'U32',
+			    'format' => 'ENUM',
+				'mapping' => [
+					    35 => 'Fehler',
+  				        303 => 'Aus',
+					    307 => 'OK',
+					    455 => 'Warnung',
+					    16777213 => 'Informationen liegen nicht vor'
+					]
+            ],
+            40187 => [
+			    'name' => 'BatCapacRtgWh',
+			    'count' => 2,
+			    'type' => 'U32',
+				'format' => 'RAW',
+				'profile' => 'MySMA.Wh'
+            ],
+            30853 => [
+                'name' => 'Active battery charging mode',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'ENUM',
+                'mapping' => [
+                    1767 => 'Quick charge',
+                    1768 => 'Full charge',
+                    1769 => 'Compensation charge',
+                    1770 => 'Maintenance charge',
+                    2184 => 'Save energy while on mains'
+                ]
+            ],
+            30857 => [
+                'name' => 'Number of battery charge throughputs',
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => '~Volt'
+            ],
+            30859 => [
+                'name' => 'Battery maintenance charge status',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'ENUM',
+                'mapping' => [
+                    803 => 'Inactive',
+                    1771 => 'Charge with solar power',
+                    1772 => 'Charge with solar and mains power',
+                ]
             ]
         ]
     ];
