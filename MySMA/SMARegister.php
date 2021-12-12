@@ -531,41 +531,14 @@ class SMARegister
             ],
 
             /**
-             * Sunny Island
+             * Sunny Storage
              */
-            30061 => [
-                'name' => 'Firmware',
+            30843 => [
+                'name' => 'Bat.Amp',
                 'count' => 2,
-                'type' => 'U32',
-                'format' => 'FW',
-            ],
-            30577 => [
-                'name' => 'Grid energy consumption today',
-                'count' => 2,
-                'type' => 'U32',
+                'type' => 'S32',
                 'format' => 'FIX3',
-                'profile' => '~Electricity'
-            ],
-            30579 => [
-                'name' => 'Grid energy feed-in today',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX3',
-                'profile' => '~Electricity'
-            ],
-            30581 => [
-                'name' => 'Grid reference counter reading',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX3',
-                'profile' => '~Electricity'
-            ],
-            30583 => [
-                'name' => 'Grid feed-in counter reading',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX3',
-                'profile' => '~Electricity'
+                'profile' => '~Battery.100'
             ],
             30845 => [
                 'name' => 'Current battery charge status',
@@ -574,10 +547,17 @@ class SMARegister
                 'format' => 'RAW',
                 'profile' => '~Battery.100'
             ],
+             30847 => [
+			                'name' => 'Bat.Diag.ActlCapacNom',
+			                'count' => 2,
+			                'type' => 'U32',
+			                'format' => 'RAW',
+			                'profile' => '~Battery.100'
+            ],
             30849 => [
                 'name' => 'Battery temperature',
                 'count' => 2,
-                'type' => 'U32',
+                'type' => 'S32',
                 'format' => 'FIX1',
                 'profile' => '~Temperature'
             ],
@@ -587,6 +567,34 @@ class SMARegister
                 'type' => 'U32',
                 'format' => 'FIX2',
                 'profile' => '~Volt'
+            ],
+            31391 => [
+			                'name' => 'Operation.Bat.Health',
+			                'count' => 2,
+			                'type' => 'U32',
+			                'format' => 'FIX2',
+			                'profile' => '~Volt'
+            ],
+                    31393 => [
+						                'name' => 'BatChrg.CurBatCha',
+						                'count' => 2,
+						                'type' => 'U32',
+						                'format' => 'FIX0',
+						                'profile' => '~Volt'
+            ],
+                                31395 => [
+									                'name' => 'BatDsch.CurBatDsch',
+									                'count' => 2,
+									                'type' => 'U32',
+									                'format' => 'FIX0',
+									                'profile' => '~Volt'
+            ],
+            40035 => [
+												                'name' => 'BatType',
+												                'count' => 2,
+												                'type' => 'U32',
+												                'format' => 'RAW',
+												                'profile' => '~Volt'
             ],
             30853 => [
                 'name' => 'Active battery charging mode',
@@ -617,13 +625,6 @@ class SMARegister
                     1771 => 'Charge with solar power',
                     1772 => 'Charge with solar and mains power',
                 ]
-            ],
-            30861 => [
-                'name' => 'Consumer power',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'FIX0',
-                'profile' => 'Watt'
             ]
         ]
     ];
