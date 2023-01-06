@@ -365,7 +365,7 @@ class SMARegister
                     9317 => 'SB 5400TL-JP-22',
                     9326 => 'SunnyBoy Storage 2.5',
                     9346 => 'STP Tripower 6.0',
-		   19051 => 'STP Tripower SE 10.0"
+		   19051 => 'STP Tripower SE 10.0'
                 ]
             ],
             30057 => [
