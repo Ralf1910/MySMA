@@ -17,7 +17,7 @@ require_once(__MODULE__ . '/SMARegister.php');
  * @author      Frank Herrmann / Ralf Ehren
  *
  */
-class SMA extends Module
+class MySMA extends Module
 {
     use InstanceHelper;
 
